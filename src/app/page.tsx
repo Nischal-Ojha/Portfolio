@@ -25,7 +25,7 @@ export default function Home() {
         </div>          
         <div className="w-full lg:w-[50%] my-8 lg:ml-20 text-center lg:text-left">
           <p className="text-3xl lg:text-5xl">{getGreeting()},</p>
-          <p className="text-2xl lg:text-3xl my-5">Hello I'm Nischal <span>Ojha</span></p>
+          <p className="text-2xl lg:text-3xl my-5">Hello I&#39;m Nischal <span>Ojha</span></p>
           <p className="text-lg lg:text-2xl text-justify lg:text-left">I the <span>unwilling</span>, led by the <span>unknowing</span>, am doing the <span>impossible</span> for the <span>ungrateful</span>. 
           I have done so much for so long, with so little. I am now qualified to do <span>anything</span> with <span>nothing</span>.</p>
           <button className="bg-[#CAFA53] text-black text-2xl p-2 rounded-md my-10">Download CV</button>
