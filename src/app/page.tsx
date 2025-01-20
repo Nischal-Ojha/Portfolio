@@ -1,6 +1,4 @@
 import Avatar from "../Components/Avatar";
-import Image from "next/image";
-
 
 export default function Home() {
   const getGreeting = (): string => {
@@ -36,76 +34,7 @@ export default function Home() {
 
       <div id="Services">
         <h2 className="text-2xl">Services</h2>
-        <p className="m-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, voluptas nihil! Minima sit debitis,
-           sed iste asperiores quas reiciendis labore et error illum facere unde porro aliquam ratione quis ad
-           ipisci doloribus molestias. Id, aperiam neque ex odio qui natus aut cumque. Commodi totam dolorem repel
-           lat nobis labore maxime temporibus similique.</p>
-        <p className="mx-10">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Ea dolore quisquam neque itaque culpa dignissimos, nulla unde nam
-              dicta vel nisi doloremque velit similique ut quasi ab, quibusdam aperiam earu
-              m a. In rerum tempora deleniti numquam incidunt! Minima, temporibus quas 
-            dolorum sunt officiis optio repudiandae. Ratione aspernatur ab nostrum? Sapiente.</p>
-        <p className="m-10">Lorem ipsum dolor sit amet, c
-            onsectetur adipisicing elit. In eligendi hic exercitationem facere veniam possimus ipsam. Ipsa ab mai
-            ores possimus autem blanditiis nobis reprehenderit culpa voluptate accusamus quas praesentium est ips
-            um minima optio, assumenda incidunt eos consequuntur, modi tene
-            tur voluptas dolorem nam. Non architecto soluta minus dignissimos, nisi earum exercitationem.</p>
-        <p className="m-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, voluptas nihil! Minima sit debitis,
-           sed iste asperiores quas reiciendis labore et error illum facere unde porro aliquam ratione quis ad
-           ipisci doloribus molestias. Id, aperiam neque ex odio qui natus aut cumque. Commodi totam dolorem repel
-           lat nobis labore maxime temporibus similique.</p>
-        <p className="mx-10">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Ea dolore quisquam neque itaque culpa dignissimos, nulla unde nam
-              dicta vel nisi doloremque velit similique ut quasi ab, quibusdam aperiam earu
-              m a. In rerum tempora deleniti numquam incidunt! Minima, temporibus quas 
-            dolorum sunt officiis optio repudiandae. Ratione aspernatur ab nostrum? Sapiente.</p>
-        <p className="m-10">Lorem ipsum dolor sit amet, c
-            onsectetur adipisicing elit. In eligendi hic exercitationem facere veniam possimus ipsam. Ipsa ab mai
-            ores possimus autem blanditiis nobis reprehenderit culpa voluptate accusamus quas praesentium est ips
-            um minima optio, assumenda incidunt eos consequuntur, modi tene
-            tur voluptas dolorem nam. Non architecto soluta minus dignissimos, nisi earum exercitationem.</p>
-        <p className="m-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, voluptas nihil! Minima sit debitis,
-           sed iste asperiores quas reiciendis labore et error illum facere unde porro aliquam ratione quis ad
-           ipisci doloribus molestias. Id, aperiam neque ex odio qui natus aut cumque. Commodi totam dolorem repel
-           lat nobis labore maxime temporibus similique.</p>
-        <p className="mx-10">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Ea dolore quisquam neque itaque culpa dignissimos, nulla unde nam
-              dicta vel nisi doloremque velit similique ut quasi ab, quibusdam aperiam earu
-              m a. In rerum tempora deleniti numquam incidunt! Minima, temporibus quas 
-            dolorum sunt officiis optio repudiandae. Ratione aspernatur ab nostrum? Sapiente.</p>
-        <p className="m-10">Lorem ipsum dolor sit amet, c
-            onsectetur adipisicing elit. In eligendi hic exercitationem facere veniam possimus ipsam. Ipsa ab mai
-            ores possimus autem blanditiis nobis reprehenderit culpa voluptate accusamus quas praesentium est ips
-            um minima optio, assumenda incidunt eos consequuntur, modi tene
-            tur voluptas dolorem nam. Non architecto soluta minus dignissimos, nisi earum exercitationem.</p>
-        <p className="m-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, voluptas nihil! Minima sit debitis,
-           sed iste asperiores quas reiciendis labore et error illum facere unde porro aliquam ratione quis ad
-           ipisci doloribus molestias. Id, aperiam neque ex odio qui natus aut cumque. Commodi totam dolorem repel
-           lat nobis labore maxime temporibus similique.</p>
-        <p className="mx-10">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Ea dolore quisquam neque itaque culpa dignissimos, nulla unde nam
-              dicta vel nisi doloremque velit similique ut quasi ab, quibusdam aperiam earu
-              m a. In rerum tempora deleniti numquam incidunt! Minima, temporibus quas 
-            dolorum sunt officiis optio repudiandae. Ratione aspernatur ab nostrum? Sapiente.</p>
-        <p className="m-10">Lorem ipsum dolor sit amet, c
-            onsectetur adipisicing elit. In eligendi hic exercitationem facere veniam possimus ipsam. Ipsa ab mai
-            ores possimus autem blanditiis nobis reprehenderit culpa voluptate accusamus quas praesentium est ips
-            um minima optio, assumenda incidunt eos consequuntur, modi tene
-            tur voluptas dolorem nam. Non architecto soluta minus dignissimos, nisi earum exercitationem.</p>
-        <p className="m-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, voluptas nihil! Minima sit debitis,
-           sed iste asperiores quas reiciendis labore et error illum facere unde porro aliquam ratione quis ad
-           ipisci doloribus molestias. Id, aperiam neque ex odio qui natus aut cumque. Commodi totam dolorem repel
-           lat nobis labore maxime temporibus similique.</p>
-        <p className="mx-10">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Ea dolore quisquam neque itaque culpa dignissimos, nulla unde nam
-              dicta vel nisi doloremque velit similique ut quasi ab, quibusdam aperiam earu
-              m a. In rerum tempora deleniti numquam incidunt! Minima, temporibus quas 
-            dolorum sunt officiis optio repudiandae. Ratione aspernatur ab nostrum? Sapiente.</p>
-        <p className="m-10">Lorem ipsum dolor sit amet, c
-            onsectetur adipisicing elit. In eligendi hic exercitationem facere veniam possimus ipsam. Ipsa ab mai
-            ores possimus autem blanditiis nobis reprehenderit culpa voluptate accusamus quas praesentium est ips
-            um minima optio, assumenda incidunt eos consequuntur, modi tene
-            tur voluptas dolorem nam. Non architecto soluta minus dignissimos, nisi earum exercitationem.</p>
+        
       </div>
     </main>
   </div>

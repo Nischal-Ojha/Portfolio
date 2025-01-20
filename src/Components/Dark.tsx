@@ -7,7 +7,7 @@ const Dark = () => {
     const [isDark, setIsDark] = useState<boolean>(true)
 
     const changeTheme = ()=>{
-        isDark? setIsDark(false): setIsDark(true)
+        setIsDark((prev)=> !prev)
     }
 
   return (

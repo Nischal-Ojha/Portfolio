@@ -1,5 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react';
+import Image from "next/image";
+
 
 const Avatar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -22,9 +24,11 @@ const Avatar = () => {
 
     return (
         <div>
-            <img
-                src="portfolio_me.png"
+            <Image
+                src="/portfolio_me.png"
                 alt="My photo"
+                width={320}
+                height={320}
                 className={`w-44 lg:w-80 lg:rounded-[80px] lg:absolute lg:-top-20 lg:right-60 transition-all ease-in-out ${isScrolled ? 'lg:z-0' : 'lg:z-30'} `}
             />
         </div>
