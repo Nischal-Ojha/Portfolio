@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Colors main=> #CAFA53, background => #090D0F */
+
+@layer base {
+  span {
+    @apply text-[#CAFA53] font-semibold inline-block hover:scale-105 ;
+  }
+}
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -9,7 +18,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: linear-gradient(135deg, hsla(210, 25%, 5%, 1) 60%, hsla(254, 36%, 38%, 1) 100%);
     --foreground: #ededed;
   }
 }
