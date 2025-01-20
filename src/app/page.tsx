@@ -1,3 +1,4 @@
+import  Box  from "../Components/Box";
 import Avatar from "../Components/Avatar";
 
 export default function Home() {
@@ -32,9 +33,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="Services">
-        <h2 className="text-2xl">Services</h2>
-        
+      <div id="Services" className="flex gap-2 items-center justify-center border border-red-600">
+        <Box />
+        <Box />
+        <Box />
       </div>
     </main>
   </div>
