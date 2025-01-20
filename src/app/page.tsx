@@ -1,5 +1,5 @@
-import  Box  from "../Components/Box";
 import Avatar from "../Components/Avatar";
+import Contain from "../Components/Contain";
 
 export default function Home() {
   const getGreeting = (): string => {
@@ -15,12 +15,13 @@ export default function Home() {
       return 'Good Night';
     }
   };
+
    
   return (
     <div className="min-h-screen p-4 m-4 mt-28 font-[family-name:var(--font-geist-sans)] relative">
     <main className="flex flex-col gap-8 items-center row-start-2 lg:items-center w-full">
 
-      <div className="Home lg:w-[80%] flex flex-col lg:flex-row items-center">
+      <div className="Home lg:w-[80%] flex flex-col lg:flex-row items-center lg:mb-14">
         <div className="order-first lg:order-last">
           <Avatar />
         </div>          
@@ -33,16 +34,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="Services" className="flex w-[80%] overflow-x-scroll overflow-y-visible scrollbar-thin scrollbar-track-transparent scrollbar-thumb-blue-500 pt-6 gap-2 p-2">
-        <Box />
-        <Box />
-        <Box />
-        <Box />
-        <Box />
-        <Box />
-        <Box />
-        <Box />
-      </div>
+      <Contain />
     </main>
   </div>
   );

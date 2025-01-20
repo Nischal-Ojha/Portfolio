@@ -1,0 +1,65 @@
+"use client"
+
+import { useRef } from "react";
+import { ArrowLeft, ArrowRight } from "lucide-react"; // or your preferred icons
+import Box from "./Box";
+
+const Contain = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  const scrollContainer = (direction: "left" | "right") => {
+    if (containerRef.current) {
+      const scrollAmount = 200; // Adjust this value as needed
+      if (direction === "left") {
+        containerRef.current.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+      } else {
+        containerRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      }
+    }
+  };
+
+  const boxes = [
+    { id: 1, heading: 'Frontend Development', content:"With a strong foundation in frontend technologies, I have successfully developed and deployed several React and Next.js projects, ensuring responsive and high-performance user experiences." },
+    { id: 2, heading: 'Frontend Development', content:"With a strong foundation in frontend technologies, I have successfully developed and deployed several React and Next.js projects, ensuring responsive and high-performance user experiences." },
+    { id: 3, heading: 'Frontend Development', content:"With a strong foundation in frontend technologies, I have successfully developed and deployed several React and Next.js projects, ensuring responsive and high-performance user experiences." },
+    { id: 4, heading: 'Frontend Development', content:"With a strong foundation in frontend technologies, I have successfully developed and deployed several React and Next.js projects, ensuring responsive and high-performance user experiences." },
+    { id: 5, heading: 'Frontend Development', content:"With a strong foundation in frontend technologies, I have successfully developed and deployed several React and Next.js projects, ensuring responsive and high-performance user experiences." },
+    { id: 6, heading: 'Frontend Development', content:"With a strong foundation in frontend technologies, I have successfully developed and deployed several React and Next.js projects, ensuring responsive and high-performance user experiences." },
+    { id: 7, heading: 'Frontend Development', content:"With a strong foundation in frontend technologies, I have successfully developed and deployed several React and Next.js projects, ensuring responsive and high-performance user experiences." },
+    { id: 8, heading: 'Frontend Development', content:"With a strong foundation in frontend technologies, I have successfully developed and deployed several React and Next.js projects, ensuring responsive and high-performance user experiences." },
+    { id: 9, heading: 'Frontend Development', content:"With a strong foundation in frontend technologies, I have successfully developed and deployed several React and Next.js projects, ensuring responsive and high-performance user experiences." },
+    { id: 10, heading: 'Frontend Development', content:"With a strong foundation in frontend technologies, I have successfully developed and deployed several React and Next.js projects, ensuring responsive and high-performance user experiences." },
+  ];
+
+  return (
+    <div id="Services" className="flex flex-col w-[80%] pt-6 gap-2 p-2 overflow-visible">
+      <p className="text-center text-3xl">
+        <span className="drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]">Services</span>
+      </p>
+      <div className="flex gap-2 items-center">
+        <button
+          className="bg-slate-700 bg-opacity-35 rounded-3xl w-10 hidden lg:block"
+          onClick={() => scrollContainer("left")}
+        >
+          <ArrowLeft />
+        </button>
+        <div
+          ref={containerRef}
+          className="flex gap-2 pt-10 h-max lg:gap-6 overflow-x-scroll overflow-visible scrollbar-thin scrollbar-track-transparent scrollbar-thumb-blue-500"
+        >
+          {boxes.map((box) => (
+            <Box key={box.id} id={box.id} heading={box.heading} content={box.content} />
+          ))}
+        </div>
+        <button
+          className="bg-slate-700 bg-opacity-35 rounded-3xl w-10 hidden lg:block"
+          onClick={() => scrollContainer("right")}
+        >
+          <ArrowRight />
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default Contain
