@@ -19,12 +19,9 @@ export default function Home() {
    
   return (
     <div className="min-h-screen p-4 m-4 mt-28 font-[family-name:var(--font-geist-sans)] relative">
-    <main className="flex flex-col gap-8 items-center row-start-2 lg:items-center w-full">
-
-      <div className="Home lg:w-[80%] flex flex-col lg:flex-row items-center lg:mb-14">
-        <div className="order-first lg:order-last">
-          <Avatar />
-        </div>          
+    <main className="flex flex-col gap-8 items-center w-full">
+      <div className="Home lg:w-[80%] h-[calc(100vh-150px)] flex flex-col lg:flex-row items-center">
+        <Avatar />
         <div className="w-full lg:w-[50%] my-8 lg:ml-20 text-center lg:text-left">
           <p className="text-3xl lg:text-5xl">{getGreeting()},</p>
           <p className="text-2xl lg:text-3xl my-5">Hello I&#39;m Nischal <span>Ojha</span></p>
@@ -35,6 +32,7 @@ export default function Home() {
       </div>
 
       <Contain />
+      
     </main>
   </div>
   );

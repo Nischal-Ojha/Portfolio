@@ -122,10 +122,10 @@ interface BoxProps {
 const Box: React.FC<BoxProps> = ({ id, heading, content }) => {
   return (
     <div
-      className={`border w-96 rounded-t-3xl border-purple-800 transform transition-all duration-300 ease-in-out hover:-translate-y-5 hover:scale-105 lg:hover:scale-110 hover:mx-2 lg:hover:mx-3 hover:shadow-[0_0px_10px_rgba(76,29,149,0.8)]`}
+      className={`group border w-96 h-[360px] overflow-y-clip flex flex-col justify-center items-center rounded-t-3xl border-purple-800 transform transition-all duration-300 ease-in-out hover:-translate-y-5 hover:scale-105 lg:hover:scale-110 hover:mx-2 lg:hover:mx-3 hover:shadow-[0_0px_10px_rgba(76,29,149,0.8)]`}
     >
-      <h2 className="text-3xl m-2 p-4">{id}. {heading}</h2>
-      <p className="text-md m-2 p-4">
+      <h2 className="text-3xl mx-2 px-4 py-2">{id}. {heading}</h2>
+      <p className="absolute text-[2rem] overflow-hidden font-bold text-purple-500 opacity-5 group-hover:text-base group-hover:py-2 group-hover:mx-6 group-hover:font-normal group-hover:text-white group-hover:static group-hover:opacity-100 ">
         {content}
       </p>
     </div>
