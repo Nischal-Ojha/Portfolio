@@ -22,12 +22,12 @@ const Avatar = () => {
     }, []);
 
     return (
-        <div className={`w-44 order-first lg:order-last lg:w-96 lg:rounded-[80px] lg:absolute lg:-top-20 lg:right-40 transition-all ease-in-out ${isScrolled ? 'lg:z-0' : 'lg:z-30'} `}>
+        <div className={`w-44 flex flex-col items-center order-first lg:w-[25%] lg:order-last lg:rounded-[80px] lg:absolute lg:-top-16 lg:right-52 transition-all ease-in-out ${isScrolled ? 'lg:z-0' : 'lg:z-30'} `}>
             <Image
                 src="/portfolio_me.png"
                 alt="My photo"
-                width={360}
-                height={360}
+                width={400}
+                height={400}
             />
         </div>
     );

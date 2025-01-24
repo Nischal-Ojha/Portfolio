@@ -1,4 +1,4 @@
-  "use client"
+"use client"
   
 import React, { useEffect, useState } from 'react'
 import Dark from './Dark'
@@ -25,6 +25,10 @@ const NavBar = () => {
     }
 
     window.addEventListener("scroll", handleScrolled)
+
+    return ()=>{
+      window.removeEventListener("scroll", handleScrolled)
+    }
   
   },[scrolled])
 
@@ -32,13 +36,14 @@ const NavBar = () => {
 
 
   return (
-    <div className={`w-screen flex lg:flex-row flex-col gap-4 lg:gap-0 lg:items-center justify-between p-4 rounded-lg bg-black transition-all duration-300 ease-in-out ${(direction === "down") ? "opacity-100 translate-y-0" :"opacity-0 -translate-y-32"}`}>
+    <div className={`w-screen flex lg:flex-row flex-col gap-4 lg:gap-0 lg:items-center justify-between p-4 rounded-lg bg-black shadow-lg shadow-purple-900 transition-all duration-300 ease-in-out ${(direction === "down") ? "opacity-100 translate-y-0" :"opacity-0 -translate-y-32"}`}>
       <p className='lg:text-3xl text-2xl text-center'><span><Link href="/">Nischal</Link></span></p>
       <ul className='flex gap-12'>
         <li className='hover:scale-105 hover:text-[#CAFA53]' ><Link href="/">Home</Link></li>
         <li className='hover:scale-105 hover:text-[#CAFA53]' ><a href="#Services">Services</a></li>
         <li className='hover:scale-105 hover:text-[#CAFA53]' >About</li>
-        <li className='hover:scale-105 hover:text-[#CAFA53]' >Contact</li>
+        <li className='hover:scale-105 hover:text-[#CAFA53]' >Contacts</li>
+        {/* <li className='hover:scale-105 hover:text-[#CAFA53]'><Link href="contacts">Contacts</Link></li> */}
       </ul>
       <Dark/>
     </div>

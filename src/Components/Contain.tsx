@@ -30,9 +30,9 @@ const Contain = () => {
     {heading: 'Frontend Development', content:"With a strong foundation in frontend technologies, I have successfully developed and deployed several React and Next.js projects, ensuring responsive and high-performance user experiences." },
     {heading: 'Backend Development', content:"With a strong foundation in backend technologies, I have successfully developed and deployed several Node.js projects using mongoDB and express, ensuring responsive and high-performance user experiences." },
   ];
-  
+
   return (
-    <div id="Services" className="flex flex-col w-[80%] pt-6 gap-2 p-2 overflow-visible">
+    <div id="Services" className="flex flex-col w-[80%] gap-2 overflow-visible">
       <p className="text-center text-3xl"><span className="drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]">Services</span></p>
       <div className="flex gap-2 items-center">
         <button className="bg-slate-700 bg-opacity-35 rounded-3xl w-10 hidden lg:block" onClick={() => scrollContainer("left")}>
