@@ -11,7 +11,7 @@ const Dark = () => {
     }
 
   return (
-    <button onClick={changeTheme} className={`rounded-[20px] p-2 hidden lg:block`}>
+    <button onClick={changeTheme} className={`rounded-[20px] p-2 hidden lg:block md:block`}>
       <div className={`transition-transform duration-300 hover:scale-105 flex justify-center ${isDark?'-rotate-45':'rotate-360'}`} ><span>{isDark?<Sun className="h-6 w-6" />:<Moon className="h-6 w-6 text-purple-900" />}</span></div>
     </button>
   )
